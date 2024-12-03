@@ -5,23 +5,28 @@
         <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Snootads</title>
-    <style>
-        body {
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* Full viewport height */
-            background-color: #f0f0f0;
-        }
-        img {
-            width: 100%; /* Ensure image expands to full width */
-            height: auto; /* Maintain aspect ratio */
-            max-width: 100%; /* Optional: set a max width for larger screens */
-        }
-    </style>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+      <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Full viewport height */
+      background-color: #f8f9fa;
+    }
+    .responsive-img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain; /* Ensure aspect ratio is maintained */
+    }
+  </style>
    </head>
    <body>
-      <img src="img/poster2.jpeg"  alt=""> </div>
+      <img src="img/poster2.jpeg" class="img-fluid responsive-img" alt=""> </div>
+      <!-- Bootstrap 4 JS and dependencies (Optional, if using Bootstrap JS components) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
    </body>
 </html>
